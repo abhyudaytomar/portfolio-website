@@ -1,0 +1,30 @@
+.container {
+    min-height: 60vh;
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  .mainTypography {
+    text-align: center;
+   
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .main-text{
+  font-size: 75px !important;
+  margin-top:500px ;
+  font-family: 'Poppins', sans-serif;
+  color: #FFA500;
+  }
+  
+  .additionalText {
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .neonOrange {
+    color: #FFA500;
+  }
+  

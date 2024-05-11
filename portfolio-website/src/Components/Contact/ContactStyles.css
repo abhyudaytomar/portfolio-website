@@ -1,0 +1,33 @@
+
+
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .form-textfield {
+    margin-bottom: 20px;
+    background-color: #333333;
+  }
+  
+  .phone-svg{
+    position: absolute;
+    margin: auto;
+  }
+
+  .form-grid{
+    position: relative;
+
+  }
+  

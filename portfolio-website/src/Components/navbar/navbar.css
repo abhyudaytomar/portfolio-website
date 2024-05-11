@@ -1,0 +1,50 @@
+/* navbar.css */
+
+/* Override default background color of AppBar */
+.navbar {
+  background-color: black;
+}
+
+/* Style the toolbar */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Style the title */
+.title {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the name */
+.name {
+  font-family: cursive;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* Style the subtitle */
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #CCCCCC;
+  margin: 0;
+}
+
+/* Style the links container */
+.links {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the navigation links */
+.navlink {
+  color: antiquewhite;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}

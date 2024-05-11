@@ -1,0 +1,14 @@
+.footer {
+    background-color: black;
+    color: #FFFFFF; /* White text */
+    padding: 20px 0; /* Add some padding for spacing */
+  }
+  
+  .footer a {
+    color: #FFFFFF; /* White links */
+  }
+  
+  .footer a:hover {
+    color: #CCCCCC; /* Lighter color on hover */
+  }
+  
