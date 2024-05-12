@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Link } from '@mui/material';
-import './Footer.css'; // Import your CSS file for footer styles
+import './Footer.css'; 
 
 const Footer = () => {
   return (

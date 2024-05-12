@@ -21,7 +21,7 @@ const Contact = () => {
       <Grid container spacing={2}>
         {/* Contact Information */}
         <Grid item xs={12} md={6}>
-        <Typography variant="h2" gutterBottom>Contact Me</Typography>
+        <Typography variant="h2" gutterBottom color={"#FFA500"}>Contact Me</Typography>
       <Typography variant="body1" gutterBottom>
         If you have any questions or inquiries, feel free to reach out to me:
       </Typography>
@@ -29,15 +29,15 @@ const Contact = () => {
             <div className="contact-info-section">
               <Box display="flex" alignItems="center" className="contact-info">
                 <EmailIcon style={{ marginRight: '10px' }} />
-                <Typography variant="body1">example@example.com</Typography>
+                <Typography variant="body1">abhyudaytomar12@gmail.com</Typography>
               </Box>
               <Box display="flex" alignItems="center" className="contact-info">
                 <PhoneIcon style={{ marginRight: '10px' }} />
-                <Typography variant="body1">+1234567890</Typography>
+                <Typography variant="body1">+919878434250</Typography>
               </Box>
               <Box display="flex" alignItems="center" className="contact-info">
                 <LocationOnIcon style={{ marginRight: '10px' }} />
-                <Typography variant="body1">123 Street Name, City, Country</Typography>
+                <Typography variant="body1">Bangalore</Typography>
               </Box>
             </div>
           </div>

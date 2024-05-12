@@ -1,0 +1,51 @@
+.skills-container {
+  margin: 20px 10px; /* Added 10px left and right margin */
+  text-align: center;
+}
+
+.section-heading {
+  color: #FFA500; /* Neon Orange */
+  font-size: 28px; /* Increased font size */
+  margin: 20px 0; /* Added margin top and bottom */
+  text-transform: uppercase;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-box {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  margin-right: 10px; /* Reduced right margin */
+  max-width: calc(45% - 5px); /* Increased length of the main boxes */
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box-heading {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.technology-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technology {
+  background-color: #444;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
