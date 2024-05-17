@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import { Typography, Container, Grid, Box, Divider, TextField, Button, duration } from '@mui/material';
+import { Typography, Container, Grid, Box, Divider, TextField, Button } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './ContactStyles.css'; // Import the CSS file
-import { motion, useInView, useReducedMotion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -17,14 +17,13 @@ const Contact = () => {
 
   return (
     <Container id="contact" ref={ref}>
-     
       <Grid container spacing={2}>
         {/* Contact Information */}
         <Grid item xs={12} md={6}>
-        <Typography variant="h2" gutterBottom color={"#FFA500"}>Contact Me</Typography>
-      <Typography variant="body1" gutterBottom>
-        If you have any questions or inquiries, feel free to reach out to me:
-      </Typography>
+          <Typography variant="h2" gutterBottom color={"#FFA500"}>Contact Me</Typography>
+          <Typography variant="body1" gutterBottom>
+            If you have any questions or inquiries, feel free to reach out to me:
+          </Typography>
           <div className="contact-info-wrapper">
             <div className="contact-info-section">
               <Box display="flex" alignItems="center" className="contact-info">
@@ -46,7 +45,7 @@ const Contact = () => {
         <Grid item xs={12} md={6} className='form-grid'>
           <div className="form-section">
             <motion.div className="phone-svg" initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} transition={{ delay: 3, duration: 1 }}>
-              <svg width="400px" height="400px" viewBox="0 0 32.666 32.666">
+              <svg width="100%" height="auto" viewBox="0 0 32.666 32.666">
                 <motion.path
                   strokeWidth={0.2}
                   fill="none"
