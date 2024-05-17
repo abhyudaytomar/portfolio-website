@@ -1,12 +1,19 @@
+:root {
+  --neon-orange: #FFA500;
+  --neon-green: #32CD32;
+  --neon-blue: #00CED1;
+  --neon-purple: #9370DB;
+}
+
 .skills-container {
-  margin: 20px 10px; /* Added 10px left and right margin */
+  margin: 20px 10px;
   text-align: center;
 }
 
 .section-heading {
-  color: #FFA500; /* Neon Orange */
-  font-size: 28px; /* Increased font size */
-  margin: 20px 0; /* Added margin top and bottom */
+  color: var(--neon-orange);
+  font-size: 28px;
+  margin: 20px 0 20px calc(2% + 10px); /* Adjusted left margin */
   text-transform: uppercase;
   text-align: left;
   font-family: 'Arial', sans-serif;
@@ -14,7 +21,9 @@
 
 .skills-content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin: 10px; /* Added margin for overall content */
 }
 
 .main-box {
@@ -22,11 +31,44 @@
   color: white;
   padding: 20px;
   border-radius: 10px;
-  flex: 1;
-  margin-right: 10px; /* Reduced right margin */
-  max-width: calc(45% - 5px); /* Increased length of the main boxes */
+  margin: 2%; /* Relative margin for main boxes */
   text-align: left;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .main-box {
+    max-width: calc(50% - 4%); /* Adjusted max-width and margin for responsiveness */
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-box {
+    margin: 2%; /* Adjusted margin for main boxes */
+    max-width: calc(50% - 4%);
+  }
+
+  .main-box:nth-child(odd) {
+    margin-right: 2%;
+  }
+
+  .main-box:nth-child(even) {
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-box {
+    max-width: calc(50% - 4%);
+  }
 }
 
 .box-heading {
@@ -43,9 +85,31 @@
 .technology {
   background-color: #444;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 5px;
   margin: 5px;
   font-size: 14px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid; /* Default border to be overridden by specific colors */
+}
+
+/* Shuffled neon border colors */
+.technology:nth-child(5n+1) {
+  border-color: var(--neon-orange);
+}
+
+.technology:nth-child(5n+2) {
+  border-color: var(--neon-green);
+}
+
+.technology:nth-child(5n+3) {
+  border-color: var(--neon-purple);
+}
+
+.technology:nth-child(5n+4) {
+  border-color: var(--neon-blue);
+}
+
+.technology:nth-child(5n+5) {
+  border-color: var(--neon-orange);
 }
