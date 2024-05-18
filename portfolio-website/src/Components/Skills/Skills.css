@@ -27,7 +27,7 @@
 }
 
 .main-box {
-  background-color: #222;
+  background: linear-gradient(135deg, #333, #444);
   color: white;
   padding: 20px;
   border-radius: 10px;
