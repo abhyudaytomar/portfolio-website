@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Typography, Grid, Card, CardMedia, CardContent } from '@mui/material';
+import { Typography, Grid, Card, CardMedia, CardContent, useMediaQuery } from '@mui/material';
 import './Main.css'; // Import custom CSS for Projects component
 
 const cardStyles = {
@@ -20,7 +19,9 @@ const imageStyles = {
 };
 
 const Projects = () => {
-  // Define projects data
+  const isMobile = useMediaQuery('(max-width:600px)'); // Check if the screen is mobile
+
+  // Define projects data directly in the component
   const projects = [
     {
       title: 'Project 1',
@@ -37,16 +38,12 @@ const Projects = () => {
       description: 'Description of Project 3',
       image: 'background-image.jpg',
     },
-    {
-      title: 'Project 4',
-      description: 'Description of Project 4',
-      image: 'background-image.jpg',
-    },
+   
   ];
 
   return (
     <div className="projects-container" id="projects">
-      <Typography variant="h2" align="center" gutterBottom>
+      <Typography variant={isMobile ? "h3" : "h2"} align="center" gutterBottom className='section-heading'>
         Projects
       </Typography>
       <Grid container spacing={3} justifyContent="center">
@@ -60,7 +57,7 @@ const Projects = () => {
                 style={imageStyles}
               />
               <CardContent>
-                <Typography variant="h4" gutterBottom>
+                <Typography variant={isMobile ? "h5" : "h4"} gutterBottom>
                   {project.title}
                 </Typography>
                 <Typography variant="body1" gutterBottom>
