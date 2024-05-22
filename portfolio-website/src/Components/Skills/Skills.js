@@ -19,20 +19,20 @@ const MainBox = ({ title, technologies }) => (
 const Skills = () => {
   const boxesData = [
     {
-      title: "Box 1",
-      technologies: ["React", "JavaScript", "HTML", "CSS"]
+      title: "Frontend ",
+      technologies: ["HTML", "CSS", "Tailwind CSS", "Javascript","React Js "]
     },
     {
-      title: "Box 2",
-      technologies: ["Node.js", "Express.js", "MongoDB"]
+      title: "Backend",
+      technologies: ["Node.js", "Express.js", "Golang"]
     },
     {
-      title: "Box 3",
-      technologies: ["Python", "Django", "Flask"]
+      title: "Database",
+      technologies: ["MySQL", "MongoDB", "ElasticSearch","PostgreSQL"]
     },
     {
-      title: "Box 4",
-      technologies: ["Java", "Spring Boot", "Hibernate"]
+      title: "Devops",
+      technologies: ["Git", "Docker", "Kubernetes","Jenkins","AWS"]
     }
   ];
 
